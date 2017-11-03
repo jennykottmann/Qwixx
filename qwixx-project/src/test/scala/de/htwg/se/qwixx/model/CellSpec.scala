@@ -7,11 +7,16 @@ import org.scalatest._
 import org.scalatest.junit.JUnitRunner
 
 @RunWith(classOf[JUnitRunner])
-class CellSpec extends WordSpec with Matchers{
-  "A Cell" when { 
+class CellSpec extends FlatSpec with Matchers{
+
+  "A new Cell" should "have value 1" in {
+    Cell(1, false).value should be(1)
+  }
+/*
+  "A Cell" when {
     "new" should {
       val cell = Cell(1,false)
-      "have a value"  in {
+      "have a value" in {
         cell.value should be(1)
       }
       "have a boolean checked" in {
@@ -19,6 +24,7 @@ class CellSpec extends WordSpec with Matchers{
       }
     }
   }
+  */
 //  "A Player" when { 
 //    "new" should {
 //      val player = Player("Your Name")
