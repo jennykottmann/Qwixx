@@ -3,7 +3,7 @@ object ModelWorksheet {
   //case class Field(cells: Array[Cell])
   // val field1 = Field(Array.ofDim[Cell](1))
   
-    println("Welcome to Qwixx")
+    println("Welcome to Qwixx  test")
   
   	// Klasse Cell
   	case class Cell(value:Int, checked:Boolean)

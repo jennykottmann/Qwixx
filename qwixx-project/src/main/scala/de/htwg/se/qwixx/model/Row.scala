@@ -1,5 +1,3 @@
 package de.htwg.se.qwixx.model
 
-class Row {
-  
-}
+case class Row(cells:Array[Cell], closedFlag:Boolean, colour: String)
