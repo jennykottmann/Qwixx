@@ -1,11 +1,10 @@
 package de.htwg.se.qwixx.model
 
-case class Row(crossedRow:List[Int], closedFlag:Boolean, colour: String) {
-  // Row besteht aus einer Liste (Int), einem Flag für closed und einer Farbe
-  var crossed = List[Int]
+case class Row(crossedRow:List[Int], closedFlag:Boolean) {
+
 
   // Methode prüft, ob gewürfelte Zahl > bzw < des heads der Liste ist
-  def crossPossible: Unit = {
+  def crossPossible {
   }
 
 

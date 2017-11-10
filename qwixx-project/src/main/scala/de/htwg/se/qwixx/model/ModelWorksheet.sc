@@ -5,23 +5,18 @@ object ModelWorksheet {
   
     println("Welcome to Qwixx  test")
   
-  	// Klasse Cell
-  	case class Cell(value:Int, checked:Boolean)
-  	
+
   		// Klasse Row
-  	case class Row(cells:Array[Cell], closedFlag:Boolean, colour: String)
+			case class Row(crossedRow:List[Int], closedFlag:Boolean)
   	
   	// Klasse Field
   	case class Field(player:String, redRow:Row, yellowRow:Row, greenRow:Row, blueRow:Row, fail:Int)
   
-  	// Instanz der Klasse Cell
-  	var cell1=Cell(1,false)
-  
- 
+
   
   	// Instanz der Klasse Row
-  	var redRow = Row(Array(cell1), false, "red")
-  	redRow.cells(0)
+  	var redRow = Row(List(3,2,1), false)
+
   	
   //	println(redRow.cells(0))
 
